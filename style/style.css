@@ -844,7 +844,6 @@ h1::selection {
     width: 90%;
   }
 
-
   #skills {
     height: 1800px;
     display: flex;
@@ -888,11 +887,11 @@ h1::selection {
     width: 100px;
     background-color: var(--White);
     border-radius: 100%;
-    cursor: pointer;
+    cursor: default;
     transform: scale(1);
     transition: all 0.3s;
   }
-  
+
   .skill:hover {
     box-shadow: 0px 0px 10px 1px #26262680;
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
@@ -900,7 +899,7 @@ h1::selection {
     transition: all 0.3s;
     color: var(--White);
   }
-  
+
   .skills-logo {
     width: 50px;
     height: 50px;
@@ -915,7 +914,6 @@ h1::selection {
     font-size: 15px;
     font-weight: 500;
   }
-
 
   footer {
     background: rgb(224, 224, 224);
@@ -994,7 +992,8 @@ h1::selection {
   .medium,
   .instagram,
   .youtube,
-  .facebook {
+  .facebook,
+  .telegram {
     color: var(--Black);
     font-size: 20px;
     margin: 20px;
@@ -1631,11 +1630,10 @@ h1::selection {
     width: 170px;
     background-color: var(--White);
     border-radius: 100%;
-    cursor: pointer;
     transform: scale(1);
     transition: all 0.3s;
   }
-  
+
   .skill:hover {
     box-shadow: 0px 0px 10px 1px #26262680;
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
@@ -1643,7 +1641,6 @@ h1::selection {
     transition: all 0.3s;
     color: var(--White);
   }
-
 
   .skills-logo {
     width: 50px;
@@ -1659,8 +1656,6 @@ h1::selection {
     font-size: 15px;
     font-weight: 500;
   }
-
-
 
   /*   
   .skill-bars{
@@ -1928,6 +1923,7 @@ h1::selection {
   .hashnode,
   .medium,
   .instagram,
+  .telegram,
   .youtube,
   .facebook {
     color: var(--Black);
