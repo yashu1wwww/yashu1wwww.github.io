@@ -74,23 +74,27 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
           <a href="#skills" class="menu-item hvr-underline-from-left">SKILLS</a>
         </li>
       </ul>
-<!-- Toggle menu screen -->
-      <i class="bi bi-list" id="toggle-menu"></i>
-      <div class="mobile-menu">
+	  
+   <!-- Toggle menu screen -->
+    <i class="bi bi-list" id="toggle-menu"></i>
+    <div class="mobile-menu">
         <i class="bi bi-x" id="close-btn"></i>
         <ul class="menu menu-items">
-          <li class="menu-item">
-            <a href="index.html" class="hvr-underline-from-left item">HOME</a>
-          </li>
-          <li class="menu-item">
-            <a href="#about" class="hvr-underline-from-left item">ABOUT</a>
-          </li>
-          <li class="menu-item">
-            <a href="#skills" class="hvr-underline-from-left item">SKILLS</a>
-          </li>
+            <li class="menu-item">
+                <a href="index.html" class="hvr-underline-from-left item">HOME</a>
+            </li>
+            <li class="menu-item">
+                <a href="mailto:yashwanth6678@gmail.com" class="hvr-underline-from-left item">CONTACT</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://github.com/yashu1wwww" class="hvr-underline-from-left item">GITHUB</a>
+            </li>
+            <li class="menu-item">
+                <a href="https://yashawanthtechprojects.on.drv.tw/web.html" class="hvr-underline-from-left item">WEBSITES</a>
+            </li>
         </ul>
-      </div>
-    </nav>
+    </div>
+</nav>
     <div class="hero">
       <div class="hero-items">
         <h3 class="hero-hello">Hello, I Am</h3>
@@ -111,6 +115,8 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
       </div>
     </div>
   </section>
+  
+   <!---about--->
 
   
     <section id="about">
@@ -433,6 +439,8 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
         </div>
 
   </section>
+  
+   <!---footer contact section--->
 
   <footer data-aos="fade-up">
     <div class="footer-container">
@@ -498,68 +506,10 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
       </div>
     </div>
   </footer>
-  <style>
-    /* Scroll-up button styles */
-    #scroll-up-button {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px; /* Change left to right */
-      z-index: 99;
-      background-color: #0074ff;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      padding: 10px;
-      cursor: pointer;
-      animation: shake 0.5s ease-in-out infinite; /* Add shake animation */
-    }
+  
 
-    #scroll-up-button:hover {
-      background-color: #00b4ff;
-      animation: none; /* Remove animation on hover */
-    }
-
-    /* Define the shake animation */
-    @keyframes shake {
-      0% { transform: translateY(0); }
-      25% { transform: translateY(-5px); }
-      50% { transform: translateY(5px); }
-      75% { transform: translateY(-5px); }
-      100% { transform: translateY(5px); }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Scroll-up button HTML -->
-  <button id="scroll-up-button" onclick="scrollToTop()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M12 3l-8 8h6v10h4V11h6z"/>
-    </svg>
-  </button>
-
-  <!-- Add your JavaScript code for scroll functionality -->
-  <script>
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Function to show/hide the scroll-up button based on scroll position
-    window.addEventListener('scroll', function() {
-      var scrollButton = document.getElementById('scroll-up-button');
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollButton.style.display = 'block';
-        scrollButton.style.backgroundColor = '#00b4ff'; // Highlight the button
-      } else {
-        scrollButton.style.display = 'none';
-      }
-    });
-  </script>
-
-
-  <script src="js/swiper-bundle.min.js"></script>
+  
+<script src="js/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -571,6 +521,9 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
   <script src="js/blogs.js"></script>
   </head>
 <body>
+
+  <!---cookies--->
+
 <script
 defer
 src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
@@ -600,5 +553,92 @@ j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefo
 </script>
 <script src="https://d36jcksde1wxzq.cloudfront.net/bugsnag.aa0d0038ca72648bf8ec.js"></script>
 <script src="https://d36jcksde1wxzq.cloudfront.net/main.fb8d2007b0855c3bebb3.js"></script>
+</head>
+</body>
+
+ <!---upper arrow mark--->
+ 
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #arrow-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            animation: shake 0.5s infinite;
+            transform-origin: center;
+            opacity: 0; /* Initially, hide the arrow */
+            pointer-events: none; /* Disable pointer events for hidden arrow */
+        }
+        
+        #arrow-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        #arrow-icon:hover {
+            transform: scale(1.1);
+        }
+
+        /* Optional Shake Animation (you can remove this if you don't need it) */
+        .shake {
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-5px, 0); }
+            50% { transform: translate(5px, 0); }
+            75% { transform: translate(-5px, 0); }
+            100% { transform: translate(5px, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div id="arrow-container">
+        <div id="arrow-icon">&#8593;</div>
+    </div>
+
+    <script>
+        const arrowContainer = document.getElementById('arrow-container');
+        const arrowIcon = document.getElementById('arrow-icon');
+
+        // Function to toggle arrow visibility
+        function toggleArrowVisibility() {
+            if (window.scrollY > 0) {
+                arrowContainer.style.opacity = '1';
+                arrowContainer.style.pointerEvents = 'auto';
+            } else {
+                arrowContainer.style.opacity = '0';
+                arrowContainer.style.pointerEvents = 'none';
+            }
+        }
+
+        // Toggle arrow visibility on page load
+        toggleArrowVisibility();
+
+        // Toggle arrow visibility on scroll
+        window.addEventListener('scroll', toggleArrowVisibility);
+
+        arrowContainer.addEventListener('click', () => {
+            // Replace this line with the action you want to perform when the arrow is clicked
+            // For example, you can scroll to the top of the page:
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
