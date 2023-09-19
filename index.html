@@ -162,39 +162,27 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
   
  <!-- Education Section -->
    
-   <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    /* Global styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+/* Animation styles */
+    .single-horizontal-timeline {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        border-bottom: 1px solid #ccc; /* Add a border line at the bottom */
+        padding-bottom: 20px; /* Optional: Add some spacing between sections */
+    }
 
-        /* Your existing styles */
-        /* ... */
-
-        /* Style for the outline around "EDUCATION" */
-        h1.education-heading {
-            text-align: center; /* Center-align the text */
-            border: 2px solid #000; /* Black border */
-            padding: 10px; /* Padding around the text */
-            display: inline-block;
-        }
-
-        /* Animation styles */
-        .single-horizontal-timeline {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            border-bottom: 1px solid #ccc; /* Add a border line at the bottom */
-            padding-bottom: 20px; /* Optional: Add some spacing between sections */
-        }
-
-        .single-horizontal-timeline.in-view {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    .single-horizontal-timeline.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
 </head>
 <body>
     <h1 class="education-heading">EDUCATION</h1>
