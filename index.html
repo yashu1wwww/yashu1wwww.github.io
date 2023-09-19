@@ -75,7 +75,8 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
         </li>
       </ul>
 	  
-   <!-- Toggle menu screen -->
+   <!-- Toggle menu mobile screen -->
+   
     <i class="bi bi-list" id="toggle-menu"></i>
     <div class="mobile-menu">
         <i class="bi bi-x" id="close-btn"></i>
@@ -148,153 +149,169 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 <body>
                     <div class="center-align">
                         <a href="https://www.canva.com/design/DAFg_3kvM-A/VcC4cUhOcJDkyRHaxVY6Xg/edit?utm_content=DAFg_3kvM-A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="resume-download-btn" download="yashawanth">
-                            <i class="fa-solid fa-cloud-arrow-down"></i> DOWNLOAD MY RESUME
+                            <i class="fa-solid fa-cloud-arrow-down"></i> 
+							<b>DOWNLOAD MY RESUME</b>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
   
-  <!-- Education Section -->
-  
-  </div>
-  </br>
-  <style>
-  #education {
-    text-align: center;
-  }
+ <!-- Education Section -->
+   
+   <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-  .education-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+        /* Your existing styles */
+        /* ... */
 
-  .education-table th,
-  .education-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
+        /* Style for the outline around "EDUCATION" */
+        h1.education-heading {
+            text-align: center; /* Center-align the text */
+            border: 2px solid #000; /* Black border */
+            padding: 10px; /* Padding around the text */
+            display: inline-block;
+        }
 
-  .table-container {
-    overflow-x: auto; /* Add horizontal scrollbar for small screens */
-  }
-</style>
+        /* Animation styles */
+        .single-horizontal-timeline {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            border-bottom: 1px solid #ccc; /* Add a border line at the bottom */
+            padding-bottom: 20px; /* Optional: Add some spacing between sections */
+        }
 
-<section id="education" class="education">
-  <div class="section-heading text-center">
-    <style>
-  /* Define the blue color gradient */
-  h1 {
-    background: linear-gradient(to right, #0074e4, #00a4e4);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 36px; /* You can adjust the font size as needed */
-    display: inline-block; /* Prevents the gradient from taking the full width */
+        .single-horizontal-timeline.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="education-heading">EDUCATION</h1>
+    <section id="education" class="education">
+        <div class="section-heading text-center">
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="education-horizontal-timeline">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2015 - 2016</h2>
+                              <style>
+  /* Add a border around the <h3> text */
+  h3 {
+    border: 2px solid black; /* You can adjust the width and color */
+    display: inline-block; /* To make the border tightly wrap around the text */
+    padding: 5px; /* Add some padding to make it look better */
   }
 </style>
 </head>
 <body>
-
-<h1>EDUCATION</h1>
-
- <style>
-    /* Style for the education section */
-    .education {
-        background-color: #f7f7f7;
-        padding: 50px 0;
-    }
-
-    /* Style for the section heading */
-    .section-heading {
-        margin-bottom: 30px;
-    }
-
-    /* Style for the timeline box */
-    .single-horizontal-timeline {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
-
-    /* Style for the timeline content */
-    .timeline-content {
-        margin-top: 20px;
-    }
-</style>
-
-<section id="education" class="education">
-    <div class="section-heading text-center">
-        <!-- Your section heading content goes here -->
-    </div>
-    <div class="container">
-        <div class="education-horizontal-timeline">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2015 - 2016</h2>
-                            <h3>SSLC</h3>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">
-                                        Sarvodaya Boys High School,Tumkur
-                                    </h4>
-                                    <p class="description">
-                                        Karnataka State Secondary Education Examination Board
-                                    </p>
+  <h3>SSLC</h3>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <h4 class="title">
+                                            Sarvodaya Boys High School, Tumkur
+                                        </h4>
+                                        <p class="description">
+                                            Karnataka State Secondary Education Examination Board
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2016 - 2018</h2>
-                            <h3>PUC-PCMB</h3>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">
-                                        Vasavi Composite Pu college,Tumkur
-                                    </h4>
-                                    <p class="description">
-                                        Department Of Pre-University Education
-                                    </p>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2016 - 2018</h2>
+                                <h3>PUC-PCMB</h3>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <h4 class="title">
+                                            Vasavi Composite Pu college, Tumkur
+                                        </h4>
+                                        <p class="description">
+                                            Department Of Pre-University Education
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2019 - 2022</h2>
-                            <h3>BCA</h3>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <h4 class="title">
-                                    Govt First Grade College,Tumkur 
-                                </h4>
-                                <p class="description">
-                                    Tumkur University
-                                </p>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2019 - 2022</h2>
+                                <h3>BCA</h3>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Govt First Grade College, Tumkur
+                                    </h4>
+                                    <p class="description">
+                                        Tumkur University
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <script>
+        const timelineItems = document.querySelectorAll('.single-horizontal-timeline');
+
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function addInViewClass() {
+            timelineItems.forEach((item) => {
+                if (isInViewport(item)) {
+                    item.classList.add('in-view');
+                }
+            });
+        }
+
+        addInViewClass();
+        window.addEventListener('scroll', addInViewClass);
+    </script>
+</body>
+</html>
+
+ <!-- project Section -->
+ 
 </div>
 </br>
+</br>
+</br>
 <div style="text-align: center;">
-  <h1 style="font-size: 30px;"><b>PERSONAL PROJECTS</b></h1>
+  <h1 style="font-size: 30px;">
+    <span style="border: 2px solid black; padding: 10px;"><b>PERSONAL PROJECTS</b></span>
+  </h1>
 </div>
 <section id="portfolio" data-aos="fade-up">
     <div class="portfolio-container">
@@ -337,7 +354,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 
 <section id="skills" data-aos="fade-up">
 <div class="skills-container">
-     <style>
+    <style>
   /* Define the blue color gradient */
   h1 {
     background: linear-gradient(to right, #0074e4, #00a4e4);
@@ -346,12 +363,17 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
     font-size: 36px; /* You can adjust the font size as needed */
     display: inline-block; /* Prevents the gradient from taking the full width */
   }
+
+  .bordered-text {
+    border: 2px solid black;
+    padding: 10px;
+  }
 </style>
 </head>
 <body>
 
-<h1>SKILLS & TOOLS</h1>
-      <div class="skills-wrapper" data-aos="fade-up">
+<h1><span class="bordered-text">SKILLS & TOOLS</span></h1>
+<div class="skills-wrapper" data-aos="fade-up">
 	  <div class="skill">
           <div class="skills-logo">
             <img src="./icons/java.png" alt="">
