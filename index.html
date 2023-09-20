@@ -162,27 +162,34 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
   
  <!-- Education Section -->
    
-  <style>
-    /* Global styles */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-/* Animation styles */
-    .single-horizontal-timeline {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-        border-bottom: 1px solid #ccc; /* Add a border line at the bottom */
-        padding-bottom: 20px; /* Optional: Add some spacing between sections */
-    }
+ <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    .single-horizontal-timeline.in-view {
-        opacity: 1;
-        transform: translateY(0);
-    }
-</style>
+        /* Animation styles */
+        .single-horizontal-timeline {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .single-horizontal-timeline.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hover effect */
+        .single-horizontal-timeline:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
 </head>
 <body>
     <h1 class="education-heading">EDUCATION</h1>
@@ -198,24 +205,14 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
                         <div class="single-horizontal-timeline">
                             <div class="experience-time">
                                 <h2>2015 - 2016</h2>
-                              <style>
-  /* Add a border around the <h3> text */
-  h3 {
-    border: 2px solid black; /* You can adjust the width and color */
-    display: inline-block; /* To make the border tightly wrap around the text */
-    padding: 5px; /* Add some padding to make it look better */
-  }
-</style>
-</head>
-<body>
-  <h3>SSLC</h3>
+                                <h3>SSLC</h3>
                                 <div class="timeline">
                                     <div class="timeline-content">
                                         <h4 class="title">
                                             Sarvodaya Boys High School, Tumkur
                                         </h4>
                                         <p class="description">
-                                            Karnataka State Secondary Education Examination Board
+                                            KSEEB
                                         </p>
                                     </div>
                                 </div>
@@ -298,8 +295,8 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 </br>
 <div style="text-align: center;">
   <h1 style="font-size: 30px;">
-    <span style="border: 2px solid black; padding: 10px;"><b>PERSONAL PROJECTS</b></span>
-  </h1>
+   <span style="padding: 10px;"><b>PERSONAL PROJECTS</b></span>
+</h1>
 </div>
 <section id="portfolio" data-aos="fade-up">
     <div class="portfolio-container">
@@ -342,25 +339,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 
 <section id="skills" data-aos="fade-up">
 <div class="skills-container">
-    <style>
-  /* Define the blue color gradient */
-  h1 {
-    background: linear-gradient(to right, #0074e4, #00a4e4);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 36px; /* You can adjust the font size as needed */
-    display: inline-block; /* Prevents the gradient from taking the full width */
-  }
-
-  .bordered-text {
-    border: 2px solid black;
-    padding: 10px;
-  }
-</style>
-</head>
-<body>
-
-<h1><span class="bordered-text">SKILLS & TOOLS</span></h1>
+  <h1><span class="bordered-text">SKILLS & TOOLS</span></h1>
 <div class="skills-wrapper" data-aos="fade-up">
 	  <div class="skill">
           <div class="skills-logo">
