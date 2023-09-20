@@ -158,9 +158,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
   
   <!-- Education Section -->
   
-  </div>
-  </br>
-  <style>
+<style>
   #education {
     text-align: center;
   }
@@ -200,97 +198,158 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 <h1>EDUCATION</h1>
 
  <style>
-    /* Style for the education section */
-    .education {
-        background-color: #f7f7f7;
-        padding: 50px 0;
-    }
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* Style for the section heading */
-    .section-heading {
-        margin-bottom: 30px;
-    }
+        /* Style for the education section */
+        .education {
+            background-color: #f7f7f7;
+            padding: 50px 0;
+        }
 
-    /* Style for the timeline box */
-    .single-horizontal-timeline {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
+        /* Style for the section heading */
+        .section-heading {
+            margin-bottom: 30px;
+        }
 
-    /* Style for the timeline content */
-    .timeline-content {
-        margin-top: 20px;
-    }
-</style>
+        /* Style for the timeline box */
+        .single-horizontal-timeline {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            cursor: pointer; /* Add pointer cursor for click interaction */
+        }
 
-<section id="education" class="education">
-    <div class="section-heading text-center">
-        <!-- Your section heading content goes here -->
-    </div>
-    <div class="container">
-        <div class="education-horizontal-timeline">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2015 - 2016</h2>
-                            <h3>SSLC</h3>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">
-                                        Sarvodaya Boys High School,Tumkur
-                                    </h4>
-                                    <p class="description">
-                                        Karnataka State Secondary Education Examination Board
-                                    </p>
+        /* Style for the timeline content */
+        .timeline-content {
+            margin-top: 20px;
+        }
+
+        /* Add a highlight effect */
+        .highlighted {
+            background-color: lightblue; /* Change background color when selected */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="education-heading">EDUCATION</h1>
+    <section id="education" class="education">
+        <div class="section-heading text-center">
+            <!-- Your section heading content goes here -->
+        </div>
+        <div class="container">
+            <div class="education-horizontal-timeline">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2015 - 2016</h2>
+                                <h3 class="education-title">SSLC</h3>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <h4 class="title">
+                                            Sarvodaya Boys High School, Tumkur
+                                        </h4>
+                                        <p class="description">
+                                            Karnataka State Secondary Education Examination Board
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2016 - 2018</h2>
-                            <h3>PUC-PCMB</h3>
-                            <div class="timeline">
-                                <div class="timeline-content">
-                                    <h4 class="title">
-                                        Vasavi Composite Pu college,Tumkur
-                                    </h4>
-                                    <p class="description">
-                                        Department Of Pre-University Education
-                                    </p>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2016 - 2018</h2>
+                                <h3 class="education-title">PUC-PCMB</h3>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <h4 class="title">
+                                            Vasavi Composite Pu college, Tumkur
+                                        </h4>
+                                        <p class="description">
+                                            Department Of Pre-University Education
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2019 - 2022</h2>
-                            <h3>BCA</h3>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <h4 class="title">
-                                    Govt First Grade College,Tumkur 
-                                </h4>
-                                <p class="description">
-                                    Tumkur University
-                                </p>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2019 - 2022</h2>
+                                <h3 class="education-title">BCA</h3>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Govt First Grade College, Tumkur
+                                    </h4>
+                                    <p class="description">
+                                        Tumkur University
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <script>
+        const timelineItems = document.querySelectorAll('.single-horizontal-timeline');
+
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function addInViewClass() {
+            timelineItems.forEach((item) => {
+                if (isInViewport(item)) {
+                    item.classList.add('in-view');
+                } else {
+                    item.classList.remove('in-view');
+                }
+            });
+        }
+
+        // Function to handle highlighting on click
+        function handleHighlight(event) {
+            const educationTitles = document.querySelectorAll('.education-title');
+            educationTitles.forEach((title) => {
+                title.classList.remove('highlighted');
+            });
+            event.currentTarget.classList.add('highlighted');
+        }
+
+        addInViewClass();
+        window.addEventListener('scroll', addInViewClass);
+
+        const educationTitles = document.querySelectorAll('.education-title');
+        educationTitles.forEach((title) => {
+            title.addEventListener('click', handleHighlight);
+        });
+    </script>
+</body>
+</html>
+
+<!--project section -->
+
 </div>
 </br>
 <div style="text-align: center;">
