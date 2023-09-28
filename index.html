@@ -105,11 +105,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
         </a>
       </div>
       <div class="hero-img">
-        <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_zw1coqqh.json" background="transparent"
-          speed="1" style="width: 450px; height: 450px" loop autoplay></lottie-player> -->
-
-        <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_bxt0mytn.json"  background="transparent"  speed="1.5"  style="width: 440px; height: 440px;"  loop  autoplay></lottie-player> -->
-
+       
         <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hnwnp25c.json" background="transparent"
           speed="1.5" loop autoplay></lottie-player>
       </div>
@@ -308,7 +304,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 
               <b class="card-detail">Top Projects On Google Search Result</b>
             </div>
-            <!-- <a href="uiux.html" target="_blank" class="card-view">View</a> -->
+      
           </a>
         </div>
         <div class="webdev">
@@ -489,7 +485,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 
 <!---upper arrow mark--->
  
-  <style>
+   <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -502,7 +498,6 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
             bottom: 20px;
             right: 20px;
             cursor: pointer;
-            animation: shake 0.5s infinite;
             transform-origin: center;
             opacity: 0; /* Initially, hide the arrow */
             pointer-events: none; /* Disable pointer events for hidden arrow */
@@ -524,19 +519,6 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
         #arrow-icon:hover {
             transform: scale(1.1);
         }
-
-        /* Optional Shake Animation (you can remove this if you don't need it) */
-        .shake {
-            animation: shake 0.5s infinite;
-        }
-
-        @keyframes shake {
-            0% { transform: translate(0, 0); }
-            25% { transform: translate(-5px, 0); }
-            50% { transform: translate(5px, 0); }
-            75% { transform: translate(-5px, 0); }
-            100% { transform: translate(5px, 0); }
-        }
     </style>
 </head>
 <body>
@@ -546,9 +528,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
 
     <script>
         const arrowContainer = document.getElementById('arrow-container');
-        const arrowIcon = document.getElementById('arrow-icon');
 
-        // Function to toggle arrow visibility
         function toggleArrowVisibility() {
             if (window.scrollY > 0) {
                 arrowContainer.style.opacity = '1';
@@ -559,22 +539,18 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
             }
         }
 
-        // Toggle arrow visibility on page load
         toggleArrowVisibility();
 
-        // Toggle arrow visibility on scroll
         window.addEventListener('scroll', toggleArrowVisibility);
 
         arrowContainer.addEventListener('click', () => {
-            // Replace this line with the action you want to perform when the arrow is clicked
-            // For example, you can scroll to the top of the page:
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
-
-<!---ai chatbot--->
 	
-<script>
+<!---chatbot--->
+	
+	<script>
 window.embeddedChatbotConfig = {
 chatbotId: "lRas6v9y12yXzjvRqOvz8",
 domain: "www.chatbase.co"
@@ -588,7 +564,7 @@ domain: "www.chatbase.co"
             chatbotScript.setAttribute('chatbotId', "lRas6v9y12yXzjvRqOvz8");
             chatbotScript.setAttribute('domain', "www.chatbase.co");
             document.body.appendChild(chatbotScript);
-        }, 5000); // 5 seconds delay
+        }, 4000); 
     </script>
-</body>
+	</body>
 </html>
