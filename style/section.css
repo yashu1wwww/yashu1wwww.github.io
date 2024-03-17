@@ -1,0 +1,169 @@
+ /* section css */
+        /* Center-align the link */
+        .center-align {
+            text-align: center;
+        }
+		/* Gradient text for section heading */
+        h1 {
+            background: linear-gradient(to right, #0074e4, #00a4e4);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 36px;
+            display: inline-block;
+        }
+
+        /* Education section styles */
+        .education {
+            background-color: #f7f7f7;
+            padding: 0px 0;
+        }
+
+        /* Section heading style */
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        /* Timeline box style */
+        .single-horizontal-timeline {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: 2px solid #0074e4;
+        }
+
+        /* Education title style */
+        .education-title {
+            color: #0074e4;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        /* Timeline year style */
+        .experience-time h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #0074e4;
+        }
+
+        /* Description style */
+        .description {
+            font-size: 16px;
+            color: #333;
+        }
+		.center-section {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .feedback-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .feedback-card {
+      position: relative;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 15px; /* Increased border-radius for curved design */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .feedback-card:hover {
+      transform: scale(1.05);
+    }
+
+    .feedback-card::before {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 15px; /* Curved overlay */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .feedback-card:hover::before {
+      opacity: 1;
+    }
+
+    .feedback-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .feedback-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .feedback-card .feedback-text,
+    .feedback-card .feedback-author {
+      color: #000; /* Change the text color to black */
+    }
+	  /* Define the blue color gradient */
+    h1 {
+      background: linear-gradient(to right, #0074e4, #00a4e4);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 36px; /* You can adjust the font size as needed */
+      display: inline-block; /* Prevents the gradient from taking the full width */
+    }
+	  /* Define the blue color gradient */
+    h1 {
+      background: linear-gradient(to right, #0074e4, #00a4e4);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 36px; /* You can adjust the font size as needed */
+      display: inline-block; /* Prevents the gradient from taking the full width */
+    }
+	 body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #arrow-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            transform-origin: center;
+            opacity: 0; /* Initially, hide the arrow */
+            pointer-events: none; /* Disable pointer events for hidden arrow */
+        }
+        
+        #arrow-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        #arrow-icon:hover {
+            transform: scale(1.1);
+        }
+    
