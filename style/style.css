@@ -1964,3 +1964,18 @@ h1::selection {
     transition: all 0.5s ease;
   }
 }
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optional: Adjust margins and padding for smaller screens */
+  @media (max-width: 600px) {
+    .company {
+      height: auto;
+      padding: 10px;
+    }
+    .menu-caption1, .menu-caption2, .menu-caption3 {
+      margin-bottom: 10px;
+    }
+  }
